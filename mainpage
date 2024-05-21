@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weirdcore</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            overflow: hidden;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 20px;
+        }
+        .container {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .image {
+            width: 100%;
+            opacity: 0.8;
+            animation: float 10s infinite alternate;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 2rem;
+            text-shadow: 2px 2px 8px #000000;
+        }
+        a {
+            color: #ff4500;
+            text-decoration: none;
+        }
+        a:hover {
+            text-shadow: 0px 0px 10px #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Weirdcore</h1>
+    <div class="container">
+        <img src="https://via.placeholder.com/1200x600" alt="weirdcore image" class="image">
+        <div class="overlay">Embrace the Oddities</div>
+    </div>
+    <p>Explore the unsettling yet familiar. <a href="#more">Dive deeper</a>.</p>
+    <div id="more" style="margin-top: 50px;">
+        <p>This is where your reality begins to blur...</p>
+        <img src="https://via.placeholder.com/800x400" alt="weirdcore scene" class="image">
+        <p>Are you still sure this is just a webpage?</p>
+    </div>
+</body>
+</html>
